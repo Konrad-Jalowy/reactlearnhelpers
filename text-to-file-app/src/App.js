@@ -12,9 +12,7 @@ function App() {
   const textRef = useRef(null);
   const keyRef = useRef(1);
 
-  function onTitleChange(e){
-    setTitle(e.target.value);
-  }
+  
 
   function onCreateClick(e){
     alert("file created");
