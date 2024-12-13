@@ -3,6 +3,7 @@ import './App.css';
 import { DownloadLink } from './components/DownloadLink';
 import {WordsTableRFC} from './components/WordsTableRFC';
 import { TitleRFC } from './components/TitleRFC';
+import { WordsRFC } from './components/WordsRFC';
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
@@ -76,6 +77,7 @@ function App() {
       <label htmlFor="words">Paste your words here:</label> <br/>
       <textarea id='words' name='words' rows="35" cols="66" ref={textareaRef}></textarea><br/>
       <button onClick={onAddHandler}>Add words</button><br/>
+      <WordsRFC />
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
       <WordsTableRFC words={words} deleteWord={deleteWord} />
