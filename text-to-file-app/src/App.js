@@ -43,7 +43,8 @@ function App() {
     text = text.replaceAll("–", "-");
     text = text.replaceAll("•", "");
     let _asArray = text.split(/\r?\n/);
-    return _asArray.map(item => item.trim());
+    _asArray = _asArray.map(item => item.trim());
+    return _asArray.filter(item => item !== "");
   }
   return (
     <div className="App">
