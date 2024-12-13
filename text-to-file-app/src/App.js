@@ -1,10 +1,11 @@
 import {useState, useRef} from 'react'
 import './App.css';
+import { DownloadLink } from './components/DownloadLink';
 
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
-  const anchorRef = useRef(null);
+  const [url, setUrl] = useState(null);
 
   function onTitleChange(e){
     setTitle(e.target.value);
@@ -20,7 +21,7 @@ function App() {
   var jsonse = JSON.stringify(cleanScript);
   var blob = new Blob([jsonse], {type: "application/json"});
   var url  = URL.createObjectURL(blob);
-  anchorRef.current.href = url;
+  setUrl(url);
   }
   return (
     <div className="App">
@@ -31,7 +32,7 @@ function App() {
       <textarea id='words' name='words' rows="35" cols="66"></textarea><br/>
       <button>Add words</button><br/>
       <button onClick={onCreateClick}>Create file</button>
-      <a href='#' download="file" ref={anchorRef}>Download</a>
+      {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
     </div>
   );
 }
