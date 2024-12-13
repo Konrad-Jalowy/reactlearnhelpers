@@ -19,7 +19,7 @@ function App() {
       <WordsRFC setWords={setWords} />
       <AddOneRFC setWords={setWords} deleteWord={deleteWord} />
       <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
-      <WordsTableRFC words={words} deleteWord={deleteWord} />
+      <WordsTableRFC words={words}/>
     </div>
   );
 }
