@@ -17,7 +17,6 @@ function App() {
       <TitleRFC title={title} setTitle={setTitle} />
       <WordsRFC setWords={setWords} />
       <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
-      
       <WordsTableRFC words={words} deleteWord={deleteWord} />
     </div>
   );
