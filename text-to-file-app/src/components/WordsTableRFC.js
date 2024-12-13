@@ -1,5 +1,5 @@
 
-
+import {WordsRow} from './WordsRowRFC';
 function WordsTableRFC({words, qty}){
     return (
         <>
@@ -15,7 +15,9 @@ function WordsTableRFC({words, qty}){
             </tr>
         </thead>
         <tbody>
-            
+        {words.map((wordItem) => {
+                return <WordsRow key={Math.random()} word={wordItem} />
+            })}
         </tbody>
         <tfoot>
             <tr>
