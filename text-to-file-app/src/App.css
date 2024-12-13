@@ -45,5 +45,10 @@ h3 {
 }
 
 .form-row label {
-  flex-basis: 65px;
+  flex-basis: 100px;
+  background-color: teal;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: white;
 }
