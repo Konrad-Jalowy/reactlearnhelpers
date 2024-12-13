@@ -8,6 +8,10 @@ function App() {
   function onTitleChange(e){
     setTitle(e.target.value);
   }
+
+  function onCreateClick(e){
+    alert("file created");
+  }
   return (
     <div className="App">
       <label htmlFor="title">Title</label>
@@ -16,7 +20,7 @@ function App() {
       <label htmlFor="words">Paste your words here:</label> <br/>
       <textarea id='words' name='words' rows="35" cols="66"></textarea><br/>
       <button>Add words</button><br/>
-      <button>Create file</button>
+      <button onClick={onCreateClick}>Create file</button>
     </div>
   );
 }
