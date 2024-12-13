@@ -1,12 +1,10 @@
 
 import {WordsRow} from './WordsRowRFC';
-function WordsTableRFC({words, qty, deleteWord}){
+function WordsTableRFC({words, qty, deleteWord, title}){
     return (
         <>
         <table>
-        <caption>
-            Your words
-        </caption>
+        <caption>Title: {title}</caption>
         <thead>
             <tr>
             <th scope="col">Word</th>
