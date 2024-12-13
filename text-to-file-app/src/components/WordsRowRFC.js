@@ -1,10 +1,10 @@
-function WordsRow({word}){
+function WordsRow({word, deleteWord}){
     return (
         <>
         <tr>
             <td>{word.word}</td>
             <td>{word.meaning}</td>
-            <td>Delete word</td>
+            <td onClick={() => deleteWord(word._key)}>Delete word</td>
         </tr>
         </>
     )

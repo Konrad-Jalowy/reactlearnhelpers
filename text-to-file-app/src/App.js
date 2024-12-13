@@ -79,7 +79,7 @@ function App() {
       <button onClick={onAddHandler}>Add words</button><br/>
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
-      <WordsTableRFC words={words} />
+      <WordsTableRFC words={words} deleteWord={deleteWord} />
     </div>
   );
 }
