@@ -1,4 +1,4 @@
-function AddOneRFC(){
+function AddOneRFC({setWords, deleteWord}){
     return (
         <>
         <p>Not implemented</p>

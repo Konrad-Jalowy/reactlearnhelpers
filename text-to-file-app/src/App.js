@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <TitleRFC title={title} setTitle={setTitle} />
       <WordsRFC setWords={setWords} />
-      <AddOneRFC />
+      <AddOneRFC setWords={setWords} deleteWord={deleteWord} />
       <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
       <WordsTableRFC words={words} deleteWord={deleteWord} />
     </div>
