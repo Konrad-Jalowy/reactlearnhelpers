@@ -35,6 +35,8 @@ function App() {
     textRef.current = textareaRef.current.value;
     let _parsed = parseText(textRef.current);
     console.log(_parsed);
+    textRef.current = "";
+    textareaRef.current.value = "";
   }
 
   function parseText(text){
