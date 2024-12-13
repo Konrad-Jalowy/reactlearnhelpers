@@ -55,6 +55,11 @@ function App() {
       let _def = item.slice(_idx+1);
       console.log(_word);
       console.log(_def);
+      let newItem = {
+        word: _word.trim(),
+        meaning: _def.trim()
+      };
+      setWords(prev => [...prev, newItem]);
     });
   }
   return (
