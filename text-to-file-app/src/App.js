@@ -14,7 +14,7 @@ function App() {
       <input type="text" name="title" id="title" onChange={onTitleChange} value={title} />
       <p>Title: {title}</p>
       <label htmlFor="words">Paste your words here:</label>
-      <textarea id='words' name='words' rows="5" cols="33"></textarea>
+      <textarea id='words' name='words' rows="35" cols="66"></textarea>
     </div>
   );
 }
