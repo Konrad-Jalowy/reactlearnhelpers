@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import { PasteWords } from "./ui/PasteWords";
 function WordsRFC({setWords}){
     const textareaRef = useRef(null)
   const textRef = useRef(null);
@@ -43,6 +43,7 @@ function WordsRFC({setWords}){
   }
     return (
         <>
+        <PasteWords/>
         <label htmlFor="words">Paste your words here:</label> <br/>
          <textarea id='words' name='words' rows="35" cols="66" ref={textareaRef}></textarea><br/>
          <button onClick={onAddHandler}>Add words</button><br/>
