@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import './App.css';
-import { DownloadLink } from './components/DownloadLink';
 import {WordsTableRFC} from './components/WordsTableRFC';
 import { TitleRFC } from './components/TitleRFC';
 import { WordsRFC } from './components/WordsRFC';
