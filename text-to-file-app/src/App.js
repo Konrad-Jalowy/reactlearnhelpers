@@ -6,6 +6,7 @@ function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState(null);
+  const textareaRef = useRef(null)
 
   function onTitleChange(e){
     setTitle(e.target.value);
@@ -27,6 +28,8 @@ function App() {
   }
 
   function onAddHandler(e){
+    if(textareaRef.current.value.trim() === "")
+        return;
     console.log("adding words triggered");
   }
   return (
@@ -35,7 +38,7 @@ function App() {
       <input type="text" name="title" id="title" onChange={onTitleChange} value={title} />
       <p>Title: {title}</p>
       <label htmlFor="words">Paste your words here:</label> <br/>
-      <textarea id='words' name='words' rows="35" cols="66"></textarea><br/>
+      <textarea id='words' name='words' rows="35" cols="66" ref={textareaRef}></textarea><br/>
       <button onClick={onAddHandler}>Add words</button><br/>
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
