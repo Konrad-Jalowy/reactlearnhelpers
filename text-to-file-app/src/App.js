@@ -7,6 +7,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState(null);
   const textareaRef = useRef(null)
+  const textRef = useRef(null);
 
   function onTitleChange(e){
     setTitle(e.target.value);
@@ -31,6 +32,8 @@ function App() {
     if(textareaRef.current.value.trim() === "")
         return;
     console.log("adding words triggered");
+    textRef.current = textareaRef.current.value;
+    console.log(textRef.current);
   }
   return (
     <div className="App">
