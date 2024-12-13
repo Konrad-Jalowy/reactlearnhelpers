@@ -1,7 +1,7 @@
 import {useState, useRef} from 'react'
 import './App.css';
 import { DownloadLink } from './components/DownloadLink';
-
+import {WordsTableRFC} from './components/WordsTableRFC';
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
@@ -72,6 +72,7 @@ function App() {
       <button onClick={onAddHandler}>Add words</button><br/>
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
+      <WordsTableRFC />
     </div>
   );
 }
