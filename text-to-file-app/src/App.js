@@ -35,6 +35,7 @@ function App() {
     textRef.current = textareaRef.current.value;
     let _parsed = parseText(textRef.current);
     console.log(_parsed);
+    addToWords(_parsed);
     textRef.current = "";
     textareaRef.current.value = "";
   }
@@ -45,6 +46,16 @@ function App() {
     let _asArray = text.split(/\r?\n/);
     _asArray = _asArray.map(item => item.trim());
     return _asArray.filter(item => item !== "");
+  }
+
+  function addToWords(parsed){
+    parsed.forEach(item => {
+      let _idx = item.indexOf("-");
+      let _word = item.slice(0, _idx);
+      let _def = item.slice(_idx+1);
+      console.log(_word);
+      console.log(_def);
+    });
   }
   return (
     <div className="App">
