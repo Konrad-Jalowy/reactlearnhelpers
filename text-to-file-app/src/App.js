@@ -72,10 +72,10 @@ function App() {
   return (
     <div className="App">
       <TitleRFC title={title} setTitle={setTitle} />
-      <label htmlFor="words">Paste your words here:</label> <br/>
+      {/* <label htmlFor="words">Paste your words here:</label> <br/>
       <textarea id='words' name='words' rows="35" cols="66" ref={textareaRef}></textarea><br/>
-      <button onClick={onAddHandler}>Add words</button><br/>
-      <WordsRFC />
+      <button onClick={onAddHandler}>Add words</button><br/> */}
+      <WordsRFC setWords={setWords} />
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
       <WordsTableRFC words={words} deleteWord={deleteWord} />
