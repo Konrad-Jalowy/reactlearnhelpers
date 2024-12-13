@@ -42,6 +42,7 @@ function App() {
 
   function parseText(text){
     text = text.replaceAll("–", "-");
+    text = text.replaceAll(/\r?\n/g, " ");
     let _asArray = text.split(/•/);
     _asArray = _asArray.map(item => item.trim());
     return _asArray.filter(item => item !== "");
