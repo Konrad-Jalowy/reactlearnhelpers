@@ -1,7 +1,7 @@
-function DownloadLink({name, link}){
+function DownloadLink({name, link, children}){
     return (
         <>
-        <p>Not implemented</p>
+        <a download={name} href={link}>{children}</a>
         </>
     );
 };
