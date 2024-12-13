@@ -22,3 +22,12 @@ h1 {
   padding: 1rem;
   border-radius: 15px;
 }
+
+h3 {
+  background-color: violet;
+  margin-inline: auto;
+  margin-block: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
