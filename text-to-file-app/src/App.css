@@ -1,5 +1,10 @@
 .App {
   /* text-align: center; */
+  background-color: aliceblue;
+  width: 1300px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
