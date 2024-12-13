@@ -33,7 +33,15 @@ function App() {
         return;
     console.log("adding words triggered");
     textRef.current = textareaRef.current.value;
-    console.log(textRef.current);
+    let _parsed = parseText(textRef.current);
+    console.log(_parsed);
+  }
+
+  function parseText(text){
+    text = text.replaceAll("–", "-");
+    text = text.replaceAll("•", "");
+    let _asArray = text.split(/\r?\n/);
+    return _asArray.map(item => item.trim());
   }
   return (
     <div className="App">
