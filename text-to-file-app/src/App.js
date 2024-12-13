@@ -2,6 +2,7 @@ import {useState, useRef} from 'react'
 import './App.css';
 import { DownloadLink } from './components/DownloadLink';
 import {WordsTableRFC} from './components/WordsTableRFC';
+import { TitleRFC } from './components/TitleRFC';
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
@@ -71,6 +72,7 @@ function App() {
 }
   return (
     <div className="App">
+      <TitleRFC title={title} setTitle={setTitle} />
       <label htmlFor="title">Title</label>
       <input type="text" name="title" id="title" onChange={onTitleChange} value={title} />
       <p>Title: {title}</p>
