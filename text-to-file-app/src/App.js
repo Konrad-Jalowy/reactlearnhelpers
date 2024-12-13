@@ -5,6 +5,7 @@ import { TitleRFC } from './components/TitleRFC';
 import { WordsRFC } from './components/WordsRFC';
 import { CreateRFC } from './components/CreateRFC';
 import { AddOneRFC } from './components/AddOneRFC';
+import { Header } from './components/ui/Header';
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
@@ -15,6 +16,7 @@ function App() {
 }
   return (
     <div className="App">
+      <Header/>
       <TitleRFC title={title} setTitle={setTitle} />
       <WordsRFC setWords={setWords}  />
       <AddOneRFC setWords={setWords} />
