@@ -54,3 +54,7 @@ h3 {
   text-align: center;
   color: white;
 }
+
+button {
+  align-self: center;
+}
