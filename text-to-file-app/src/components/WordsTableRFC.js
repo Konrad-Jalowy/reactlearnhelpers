@@ -1,6 +1,6 @@
 
 import {WordsRow} from './WordsRowRFC';
-function WordsTableRFC({words, qty}){
+function WordsTableRFC({words, qty, deleteWord}){
     return (
         <>
         <table>
@@ -16,7 +16,7 @@ function WordsTableRFC({words, qty}){
         </thead>
         <tbody>
         {words.map((wordItem) => {
-                return <WordsRow key={wordItem._key} word={wordItem} />
+                return <WordsRow key={wordItem._key} word={wordItem} deleteWord={deleteWord} />
             })}
         </tbody>
         <tfoot>

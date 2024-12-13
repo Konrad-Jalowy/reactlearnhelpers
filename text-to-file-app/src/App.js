@@ -65,6 +65,10 @@ function App() {
       setWords(prev => [...prev, newItem]);
     });
   }
+
+  function deleteWord(key) {
+    setWords(prev => prev.filter(item => item._key !== key));
+}
   return (
     <div className="App">
       <label htmlFor="title">Title</label>
