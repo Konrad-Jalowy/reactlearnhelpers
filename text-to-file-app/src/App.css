@@ -57,5 +57,11 @@ h3 {
 
 button {
   align-self: center;
-  padding: .3rem 1rem;
+  padding: .5rem 1rem;
+  margin-block: 1rem;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
 }
