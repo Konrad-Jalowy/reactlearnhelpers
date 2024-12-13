@@ -16,10 +16,10 @@ function App() {
   return (
     <div className="App">
       <TitleRFC title={title} setTitle={setTitle} />
-      <WordsRFC setWords={setWords} />
-      <AddOneRFC setWords={setWords} deleteWord={deleteWord} />
+      <WordsRFC setWords={setWords}  />
+      <AddOneRFC setWords={setWords} />
       <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
-      <WordsTableRFC words={words}/>
+      <WordsTableRFC words={words} deleteWord={deleteWord} />
     </div>
   );
 }
