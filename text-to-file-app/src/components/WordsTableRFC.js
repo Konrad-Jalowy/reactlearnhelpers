@@ -1,8 +1,10 @@
 
 import {WordsRow} from './WordsRowRFC';
+import { CheckTable } from './ui/CheckTable';
 function WordsTableRFC({words, qty, deleteWord, title}){
     return (
         <>
+        <CheckTable/>
         <table>
         <caption>Title: {title}</caption>
         <thead>
