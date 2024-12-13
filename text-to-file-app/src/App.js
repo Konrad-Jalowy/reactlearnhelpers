@@ -18,8 +18,8 @@ function App() {
       "words": words 
   };
 
-  var jsonse = JSON.stringify(cleanScript);
-  var blob = new Blob([jsonse], {type: "application/json"});
+  var _json = JSON.stringify(cleanScript);
+  var blob = new Blob([_json], {type: "application/json"});
   var url  = URL.createObjectURL(blob);
   setUrl(url);
   }
