@@ -6,7 +6,10 @@ function AddOneRFC({setWords}){
     const keyRef = useRef(1);
     return (
         <>
-        <p>Not implemented</p>
+        <label htmlFor="word">Word</label>
+        <input type="text" name="word" id="word"/>
+        <label htmlFor="meaning">Meaning</label>
+        <input type="text" name="meaning" id="meaning"/>
         </>
     );
 };
