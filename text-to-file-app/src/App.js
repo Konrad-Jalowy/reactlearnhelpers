@@ -4,6 +4,7 @@ import {WordsTableRFC} from './components/WordsTableRFC';
 import { TitleRFC } from './components/TitleRFC';
 import { WordsRFC } from './components/WordsRFC';
 import { CreateRFC } from './components/CreateRFC';
+import { AddOneRFC } from './components/AddOneRFC';
 function App() {
   const [words, setWords] = useState([]);
   const [title, setTitle] = useState("");
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <TitleRFC title={title} setTitle={setTitle} />
       <WordsRFC setWords={setWords} />
+      <AddOneRFC />
       <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
       <WordsTableRFC words={words} deleteWord={deleteWord} />
     </div>
