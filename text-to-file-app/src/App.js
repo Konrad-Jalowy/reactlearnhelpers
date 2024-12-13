@@ -18,10 +18,16 @@ function App() {
       "words": words 
   };
 
+  
+
   var _json = JSON.stringify(cleanScript);
   var blob = new Blob([_json], {type: "application/json"});
   var url  = URL.createObjectURL(blob);
   setUrl(url);
+  }
+
+  function onAddHandler(e){
+    console.log("adding words triggered");
   }
   return (
     <div className="App">
@@ -30,7 +36,7 @@ function App() {
       <p>Title: {title}</p>
       <label htmlFor="words">Paste your words here:</label> <br/>
       <textarea id='words' name='words' rows="35" cols="66"></textarea><br/>
-      <button>Add words</button><br/>
+      <button onClick={onAddHandler}>Add words</button><br/>
       <button onClick={onCreateClick}>Create file</button>
       {url !== null && <DownloadLink link={url} name="file1">Download</DownloadLink>}
     </div>
