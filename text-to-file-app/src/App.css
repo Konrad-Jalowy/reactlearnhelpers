@@ -31,3 +31,19 @@ h3 {
   padding: 1rem;
   border-radius: 15px;
 }
+
+.form-row {
+  width: 100%;
+  display: flex;
+  padding-inline: 1rem;
+  margin-block: .5rem;
+}
+
+.form-row input {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.form-row label {
+  flex-basis: 65px;
+}
