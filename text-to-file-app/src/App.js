@@ -73,9 +73,6 @@ function App() {
   return (
     <div className="App">
       <TitleRFC title={title} setTitle={setTitle} />
-      <label htmlFor="title">Title</label>
-      <input type="text" name="title" id="title" onChange={onTitleChange} value={title} />
-      <p>Title: {title}</p>
       <label htmlFor="words">Paste your words here:</label> <br/>
       <textarea id='words' name='words' rows="35" cols="66" ref={textareaRef}></textarea><br/>
       <button onClick={onAddHandler}>Add words</button><br/>
