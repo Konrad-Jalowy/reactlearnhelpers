@@ -20,8 +20,8 @@ function App() {
       <TitleRFC title={title} setTitle={setTitle} />
       <WordsRFC setWords={setWords}  />
       <AddOneRFC setWords={setWords} />
-      <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
       <WordsTableRFC words={words} deleteWord={deleteWord} qty={words.length} title={title} />
+      <CreateRFC url={url} setUrl={setUrl} words={words} title={title}/>
     </div>
   );
 }
