@@ -1,4 +1,7 @@
 function TitleRFC({title, setTitle}){
+    function onTitleChange(e){
+        setTitle(e.target.value);
+    }
     return (
         <>
         <p>Title: {title}</p>
