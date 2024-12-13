@@ -16,7 +16,7 @@ function WordsTableRFC({words, qty}){
         </thead>
         <tbody>
         {words.map((wordItem) => {
-                return <WordsRow key={Math.random()} word={wordItem} />
+                return <WordsRow key={wordItem._key} word={wordItem} />
             })}
         </tbody>
         <tfoot>

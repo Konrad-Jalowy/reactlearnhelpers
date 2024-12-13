@@ -8,6 +8,7 @@ function App() {
   const [url, setUrl] = useState(null);
   const textareaRef = useRef(null)
   const textRef = useRef(null);
+  const keyRef = useRef(1);
 
   function onTitleChange(e){
     setTitle(e.target.value);
@@ -53,11 +54,13 @@ function App() {
       let _idx = item.indexOf("-");
       let _word = item.slice(0, _idx);
       let _def = item.slice(_idx+1);
+      let _key = keyRef.current++;
       console.log(_word);
       console.log(_def);
       let newItem = {
         word: _word.trim(),
-        meaning: _def.trim()
+        meaning: _def.trim(),
+        _key
       };
       setWords(prev => [...prev, newItem]);
     });
