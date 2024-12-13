@@ -8,14 +8,21 @@ function AddOneRFC({setWords}){
     const meaningRef = useRef(null);
 
     function addWordHandler(e){
-        console.log("triggered");
+        let _key = getKey(keyRef.current);
+        keyRef.current++;
+        let _word = wordRef.current.value;
+        let _meaning = meaningRef.current.value;
+        let newItem = {
+            word: _word, meaning: _meaning, _key
+        };
+        setWords(prev => [...prev, newItem]);
     }
     return (
         <>
         <label htmlFor="word">Word</label>
-        <input type="text" name="word" id="word"/>
+        <input type="text" name="word" id="word" ref={wordRef}/>
         <label htmlFor="meaning">Meaning</label>
-        <input type="text" name="meaning" id="meaning"/>
+        <input type="text" name="meaning" id="meaning" ref={meaningRef}/>
         <button onClick={addWordHandler}>Add Word</button>
         </>
     );
