@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { AddSingle } from "./ui/AddSingle";
 function getKey(key){
     return `single-${key}`;
 }
@@ -19,6 +20,7 @@ function AddOneRFC({setWords}){
     }
     return (
         <>
+        <AddSingle/>
         <label htmlFor="word">Word</label>
         <input type="text" name="word" id="word" ref={wordRef}/>
         <label htmlFor="meaning">Meaning</label>
