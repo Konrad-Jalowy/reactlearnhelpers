@@ -37,6 +37,15 @@ function FileUploader({onAccept}){
     return (
         <>
         <p>Not implemented(file uploader)</p>
+        {uploaderMode === 'fileNull' && (
+            <>
+            <input 
+            ref={inputFileRef} 
+            type="file" 
+            accept="application/json" 
+            onChange={onChangeHandler}/>
+            </>
+        )}
         </>
     );
 };
