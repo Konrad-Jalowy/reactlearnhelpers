@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .ani-fadein {
   animation: fade-in 2s;
 }
@@ -42,6 +44,7 @@
  
   align-items: center;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .word-rfc {
