@@ -1,5 +1,6 @@
 import { useApp } from "../context/appcontext";
 import { useRef, useState } from "react";
+import { WordsContainer } from "./WordsContainer";
 function WordsContainerController(){
 
     const {take, shuffle, title, words, wordsFirst} = useApp();
@@ -26,6 +27,7 @@ function WordsContainerController(){
         <>
         <p>Not implemented(words container)</p>
         <p>Take: {take} shuffle: {shuffle.toString()} title: {title} wordsFirst: {wordsFirst.toString()}</p>
+        <WordsContainer key={containerKey} title={title} words={wordsRef.current} wordsFirst={wordsFirst}/>
         </>
     );
 };
