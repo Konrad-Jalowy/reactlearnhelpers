@@ -5,8 +5,6 @@ function Mainloop(){
     const [{loopMode}, dispatch] = useAppWithDispatch();
     return (
         <>
-        <p>Not implemented(mainloop)</p>
-        <button onClick={() => dispatch({type: 'setLoopMode', payload: 'started'})}>Fake send file</button>
         {loopMode === 'fileNotSent' && <FormController/>}
         {loopMode === 'started' && <WordsContainerController/>}
         </>
