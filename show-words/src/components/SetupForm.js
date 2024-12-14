@@ -29,7 +29,7 @@ function SetupForm({title, words}){
     return (
         <>
         <p>Not implemented (setup form)</p>
-        <SetupFormContent/>
+        <SetupFormContent data={_state} max={words.length} handleChange={handleChange}/>
         </>
     );
 };
