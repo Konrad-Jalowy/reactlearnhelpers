@@ -16,7 +16,7 @@ function FormController(){
         <>
         <p>Not implemented(form controller)</p>
         <button onClick={() => setFormMode('accepted')}>Fake accept file</button>
-        {formMode === "notAccepted" && <FileUploader/>}
+        {formMode === "notAccepted" && <FileUploader onAccept={onAccept}/>}
         {formMode === 'accepted' && <SetupForm/> }
         </>
     );

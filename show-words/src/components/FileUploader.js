@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { objIsCorrect } from "../utils/objIsCorrect";
-function FileUploader(){
+function FileUploader({onAccept}){
 
     const inputFileRef = useRef(null);
     const wordsRef = useRef(null);
