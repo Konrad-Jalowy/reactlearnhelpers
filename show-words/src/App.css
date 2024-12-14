@@ -28,3 +28,10 @@
     opacity: 0;
   }
 }
+
+.words-container {
+  width: 1300px;
+  height: 500px;
+  background-color: aliceblue;
+  margin-inline: auto;
+}
