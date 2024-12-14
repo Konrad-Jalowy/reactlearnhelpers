@@ -27,6 +27,12 @@ function FileUploader({onAccept}){
     function onResetHandler(){
         setUploaderMode('fileNull');
     }
+
+    function onAcceptHandler(){
+        let title = wordsRef.current.title;
+        let words = wordsRef.current.words;
+        onAccept(title, words);
+    }
    
     return (
         <>
