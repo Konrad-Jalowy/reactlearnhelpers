@@ -16,6 +16,17 @@ function FileUploader(){
         reader.readAsText(file);
         //todo - finish it
     }
+
+    
+    function onChangeHandler(e){
+        if(e.target.files){
+            readUploadedFile(e.target.files[0]);
+        }
+    }
+
+    function onResetHandler(){
+        setUploaderMode('fileNull');
+    }
    
     return (
         <>
