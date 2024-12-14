@@ -15,7 +15,25 @@ function FileUploader({onAccept}){
         let reader = new FileReader()
 
         reader.readAsText(file);
-        //todo - finish it
+        
+        reader.onload = function() {
+
+            let parsed = JSON.parse(reader.result);
+            let ok = objIsCorrect(parsed);
+
+            if(ok){
+               wordsRef.current = parsed;
+               setUploaderMode('fileNotNull');
+
+            } else {
+                inputFileRef.current.value = null;
+                wordsRef.current = null;
+            }
+        };
+
+        reader.onerror = function() {
+            console.log(reader.error);
+        };
     }
 
     
@@ -49,7 +67,7 @@ function FileUploader({onAccept}){
         )}
         {uploaderMode === 'fileNotNull' && (
             <>
-            <FileInfoRFC title={wordsRef.current.title} dates={wordsRef.current.words} />
+            <FileInfoRFC title={wordsRef.current.title} words={wordsRef.current.words} />
             <button onClick={onResetHandler}>Reset</button>
             <button onClick={onAcceptHandler}>Accept</button>
             </>
