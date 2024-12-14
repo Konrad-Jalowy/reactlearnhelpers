@@ -16,8 +16,8 @@ function WordsContainer({words, title, wordsFirst}){
         <h1 className="words-title">{title}</h1>
         <div className="words-container">
        
-        <WordRFC idx={index} ref={wordRef} key={index+1} words={words} wordsFirst={wordsFirst} />
-        <DefRFC idx={index} ref={defRef} key={index+2} words={words} wordsFirst={wordsFirst} />
+        {wordShown && <WordRFC idx={index} ref={wordRef} key={index+1} words={words} wordsFirst={wordsFirst} /> }
+        {defShown && <DefRFC idx={index} ref={defRef} key={index+2} words={words} wordsFirst={wordsFirst} /> }
         <IdxRFC idx={index} maxWord={words.length}/>
         </div>
         </>
