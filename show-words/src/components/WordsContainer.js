@@ -13,7 +13,6 @@ function WordsContainer({words, title, wordsFirst}){
     const callbackRef = useRef(null);
     return (
         <>
-        <p>Not implemented (words container)</p>
         <h1 className="words-title">{title}</h1>
         <div className="words-container">
        
