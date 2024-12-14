@@ -28,7 +28,10 @@
     opacity: 0;
   }
 }
-
+.words-title {
+  text-align: center;
+  font-size: 4rem;
+}
 .words-container {
   width: 1300px;
   height: 500px;
