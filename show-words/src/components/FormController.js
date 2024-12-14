@@ -16,7 +16,7 @@ function FormController(){
         <>
         <p>Not implemented(form controller)</p>
         {formMode === "notAccepted" && <FileUploader onAccept={onAccept}/>}
-        {formMode === 'accepted' && <SetupForm/> }
+        {formMode === 'accepted' && <SetupForm title={title} words={words}/> }
         </>
     );
 };
