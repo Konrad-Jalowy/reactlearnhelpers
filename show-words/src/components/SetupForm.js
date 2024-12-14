@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { SetupFormContent } from "./SetupFormContent";
 function SetupForm({title, words}){
     const [_state, setState] = useState({
         shuffle: false, 
@@ -29,6 +29,7 @@ function SetupForm({title, words}){
     return (
         <>
         <p>Not implemented (setup form)</p>
+        <SetupFormContent/>
         </>
     );
 };
