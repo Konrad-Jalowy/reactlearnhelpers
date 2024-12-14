@@ -1,10 +1,12 @@
 
 import './App.css';
 import { Mainloop } from './components/Mainloop';
-
+import { AppProvider } from './context/appcontext';
 function App() {
   return (
-    <Mainloop/>
+    <AppProvider>
+      <Mainloop/>
+    </AppProvider>
   );
 }
 
