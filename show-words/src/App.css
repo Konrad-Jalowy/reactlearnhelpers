@@ -42,15 +42,18 @@
 
 .word-rfc {
   margin-top: 1rem;
+  font-size: 4rem;
 }
 
 .def-rfc {
-  margin-top: auto;
+  /* margin-top: auto; */
   margin-bottom: auto;
+  font-size:2.5rem;
 }
 
 .idx-rfc {
   margin-left: auto;
   margin-right: 2rem;
+  font-size: 1.5rem;
 }
 
