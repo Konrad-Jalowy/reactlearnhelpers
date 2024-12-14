@@ -16,9 +16,10 @@ function WordsContainer({words, title, wordsFirst}){
         <p>Not implemented (words container)</p>
         <h1 className="words-title">{title}</h1>
         <div className="words-container">
-        <IdxRFC idx={index} maxWord={words.length}/>
+       
         <WordRFC idx={index} ref={wordRef} key={index+1} words={words} wordsFirst={wordsFirst} />
         <DefRFC idx={index} ref={defRef} key={index+2} words={words} wordsFirst={wordsFirst} />
+        <IdxRFC idx={index} maxWord={words.length}/>
         </div>
         </>
     );

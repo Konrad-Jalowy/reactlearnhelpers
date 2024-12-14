@@ -34,4 +34,23 @@
   height: 500px;
   background-color: aliceblue;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
 }
+
+.word-rfc {
+  margin-top: 1rem;
+}
+
+.def-rfc {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.idx-rfc {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
