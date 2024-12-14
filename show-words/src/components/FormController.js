@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { FileUploader } from "./FileUploader";
+import { SetupForm } from "./SetupForm";
 function FormController(){
     const [formMode, setFormMode] = useState('notAccepted');
     const [title, setTitle] = useState('');
@@ -14,6 +15,9 @@ function FormController(){
     return (
         <>
         <p>Not implemented(form controller)</p>
+        <button onClick={() => setFormMode('accepted')}>Fake accept file</button>
+        {formMode === "notAccepted" && <FileUploader/>}
+        {formMode === 'accepted' && <SetupForm/> }
         </>
     );
 };
