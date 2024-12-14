@@ -34,10 +34,16 @@ function WordsContainer({words, title, wordsFirst}){
             setIndex(prev => prev + 1);
         }
     }
+
+    callbackRef.current = onClickHandler;
+    if(index === maxIdx -1 && defShown === true){
+        callbackRef.current = function(){return;}
+        
+    }
     return (
         <>
         <h1 className="words-title">{title}</h1>
-        <div className="words-container" onClick={onClickHandler}>
+        <div className="words-container" onClick={callbackRef.current}>
        
         {wordShown && <WordRFC idx={index} ref={wordRef} key={index+1} words={words} wordsFirst={wordsFirst} /> }
         {defShown && <DefRFC idx={index} ref={defRef} key={index+2} words={words} wordsFirst={wordsFirst} /> }
