@@ -6,6 +6,16 @@ function FileUploader(){
     const wordsRef = useRef(null);
     
     const [uploaderMode, setUploaderMode] = useState('fileNull');
+
+    function readUploadedFile(file){
+        if(file === null)
+            return;
+        
+        let reader = new FileReader()
+
+        reader.readAsText(file);
+        //todo - finish it
+    }
    
     return (
         <>
