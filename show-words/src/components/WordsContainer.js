@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import IdxRFC from "./IdxRFC";
 import { WordRFC } from "./WordRFC";
 import { DefRFC } from "./DefRFC";
@@ -11,6 +11,15 @@ function WordsContainer({words, title, wordsFirst}){
     const defRef = useRef(null);
     const firstRender = useRef(true);
     const callbackRef = useRef(null);
+    const maxIdx = words.length;
+    useEffect(() => {
+        
+        if(firstRender.current === true){
+            firstRender.current = false;
+            
+            setWordShown(true);
+        }
+    }, []);
     return (
         <>
         <h1 className="words-title">{title}</h1>
