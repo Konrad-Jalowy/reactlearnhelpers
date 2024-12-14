@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { objIsCorrect } from "../utils/objIsCorrect";
+import FileInfoRFC from "./FileInfoRFC";
 function FileUploader({onAccept}){
 
     const inputFileRef = useRef(null);
@@ -44,6 +45,13 @@ function FileUploader({onAccept}){
             type="file" 
             accept="application/json" 
             onChange={onChangeHandler}/>
+            </>
+        )}
+        {uploaderMode === 'fileNotNull' && (
+            <>
+            <FileInfoRFC title={wordsRef.current.title} dates={wordsRef.current.words} />
+            <button onClick={onResetHandler}>Reset</button>
+            <button onClick={onAcceptHandler}>Accept</button>
             </>
         )}
         </>
