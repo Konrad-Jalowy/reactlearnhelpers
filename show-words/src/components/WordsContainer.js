@@ -8,7 +8,9 @@ function WordsContainer({words, title, wordsFirst}){
         <>
         <p>Not implemented (words container)</p>
         <h1 className="words-title">{title}</h1>
+        <div className="words-container">
         <IdxRFC idx={index} maxWord={words.length}/>
+        </div>
         </>
     );
 };
