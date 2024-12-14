@@ -20,10 +20,24 @@ function WordsContainer({words, title, wordsFirst}){
             setWordShown(true);
         }
     }, []);
+
+    function onClickHandler(){
+        if(wordShown === false && defShown === false){
+            setWordShown(true);
+        }
+        if(wordShown === true && defShown === false){
+            setDefShown(true);
+        }
+        else {
+            setWordShown(true);
+            setDefShown(false);
+            setIndex(prev => prev + 1);
+        }
+    }
     return (
         <>
         <h1 className="words-title">{title}</h1>
-        <div className="words-container">
+        <div className="words-container" onClick={onClickHandler}>
        
         {wordShown && <WordRFC idx={index} ref={wordRef} key={index+1} words={words} wordsFirst={wordsFirst} /> }
         {defShown && <DefRFC idx={index} ref={defRef} key={index+2} words={words} wordsFirst={wordsFirst} /> }
