@@ -6,6 +6,22 @@ function WordsContainerController(){
     const wordsRef = useRef(null);
     const [containerKey, setContainerKey] = useState(1);
     console.log(words);
+
+    if(wordsRef.current === null){
+        let readyWords = [...words];
+       
+        if(shuffle){
+           
+            readyWords.sort(() => Math.random() - 0.5);
+        }
+        if(readyWords.length > take){
+            
+            readyWords = readyWords.slice(0, take);
+        }
+        wordsRef.current = readyWords;
+        
+    }
+    console.log(wordsRef.current);
     return (
         <>
         <p>Not implemented(words container)</p>
