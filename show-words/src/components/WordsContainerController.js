@@ -25,8 +25,6 @@ function WordsContainerController(){
     console.log(wordsRef.current);
     return (
         <>
-        <p>Not implemented(words container)</p>
-        <p>Take: {take} shuffle: {shuffle.toString()} title: {title} wordsFirst: {wordsFirst.toString()}</p>
         <WordsContainer key={containerKey} title={title} words={wordsRef.current} wordsFirst={wordsFirst}/>
         </>
     );
