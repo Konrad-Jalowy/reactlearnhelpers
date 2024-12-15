@@ -2,7 +2,7 @@ function FileInfoRFC({title, words}){
     
     return (
         <>
-        <p>Not implemented (fileinfo RFC)</p>
+        <p>Make sure thats the file and accept:</p>
         <p>Title: {title}</p>
         <p>Words: {words.length}</p>
         </>

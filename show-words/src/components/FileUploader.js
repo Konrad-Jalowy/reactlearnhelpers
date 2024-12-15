@@ -55,9 +55,9 @@ function FileUploader({onAccept}){
    
     return (
         <>
-        <p>Not implemented(file uploader)</p>
         {uploaderMode === 'fileNull' && (
             <>
+            <p>Upload your file</p>
             <input 
             ref={inputFileRef} 
             type="file" 
