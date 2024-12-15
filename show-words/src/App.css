@@ -98,5 +98,6 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 1px 1px 8px 0px rgb(126 34 206);
   
 }
