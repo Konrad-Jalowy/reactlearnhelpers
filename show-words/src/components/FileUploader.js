@@ -54,7 +54,7 @@ function FileUploader({onAccept}){
     }
    
     return (
-        <>
+        <div className="file-uploader">
         {uploaderMode === 'fileNull' && (
             <>
             <p>Upload your file</p>
@@ -72,7 +72,7 @@ function FileUploader({onAccept}){
             <button onClick={onAcceptHandler}>Accept</button>
             </>
         )}
-        </>
+        </div>
     );
 };
 
