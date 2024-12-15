@@ -58,7 +58,9 @@ function FileUploader({onAccept}){
         {uploaderMode === 'fileNull' && (
             <>
             <p className="info-msg">Upload your file</p>
+            <label for="file-upload" class="custom-file-upload">Upload</label>
             <input 
+            id="file-upload"
             ref={inputFileRef} 
             type="file" 
             accept="application/json" 
