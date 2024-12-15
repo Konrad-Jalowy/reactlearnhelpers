@@ -91,5 +91,9 @@
 .btn-group button {
   margin-inline: auto;
   padding: 1rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  background-color: #6b21a8;
+  color: #e9d5ff;
+  letter-spacing: 5px;
+  
 }
