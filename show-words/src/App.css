@@ -73,7 +73,7 @@
   font-size: 1.5rem;
 }
 
-.file-uploader, .options-form {
+.file-uploader {
   margin-inline: auto;
   width: 1300px;
   display: flex;
@@ -141,4 +141,19 @@ input[type="file"]{
   text-align: center;
   box-shadow: 1px 1px 8px 0px rgb(37 99 235);
   user-select: none;
+}
+
+.options-form {
+  margin-inline: auto;
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options-form form {
+  background-color: red;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
 }
