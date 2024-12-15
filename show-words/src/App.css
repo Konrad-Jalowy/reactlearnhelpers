@@ -90,4 +90,6 @@
 
 .btn-group button {
   margin-inline: auto;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
 }
