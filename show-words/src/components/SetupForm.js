@@ -41,7 +41,7 @@ function SetupForm({title, words}){
     }
     return (
         <>
-        <p>Not implemented (setup form)</p>
+        <p>Choose your options</p>
         <form onSubmit={handleSubmit}>
         <SetupFormContent data={_state} max={words.length} handleChange={handleChange}/>
         <button>Accept</button>
