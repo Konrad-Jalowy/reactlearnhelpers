@@ -127,3 +127,14 @@ input[type="file"]{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.file-uploader p {
+  margin-block: 1rem;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  min-width: 100px;
+  text-align: center;
+}
