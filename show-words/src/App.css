@@ -134,7 +134,8 @@ input[type="file"]{
   color: white;
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  border-radius: 15px;
+  border-radius: 10px;
   min-width: 100px;
   text-align: center;
+  box-shadow: 1px 1px 8px 0px rgb(37 99 235);
 }
