@@ -33,6 +33,7 @@
 .words-title {
   text-align: center;
   font-size: 4rem;
+  margin-bottom: .5rem;
 }
 .words-container {
   width: 1300px;
@@ -71,4 +72,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.info-msg{
+  font-size: 2rem;
 }

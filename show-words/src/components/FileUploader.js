@@ -57,7 +57,7 @@ function FileUploader({onAccept}){
         <div className="file-uploader">
         {uploaderMode === 'fileNull' && (
             <>
-            <p>Upload your file</p>
+            <p className="info-msg">Upload your file</p>
             <input 
             ref={inputFileRef} 
             type="file" 
