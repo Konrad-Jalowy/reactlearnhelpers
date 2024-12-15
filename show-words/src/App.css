@@ -95,5 +95,8 @@
   background-color: #6b21a8;
   color: #e9d5ff;
   letter-spacing: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   
 }
