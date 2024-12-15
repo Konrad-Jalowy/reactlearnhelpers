@@ -90,6 +90,7 @@
   color: #bfdbfe;
   margin-top: 0;
   box-shadow: 1px 1px 8px 0px rgb(37 99 235);
+  user-select: none;
 }
 
 .btn-group {
