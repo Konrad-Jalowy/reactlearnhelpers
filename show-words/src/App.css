@@ -140,4 +140,5 @@ input[type="file"]{
   min-width: 100px;
   text-align: center;
   box-shadow: 1px 1px 8px 0px rgb(37 99 235);
+  user-select: none;
 }
