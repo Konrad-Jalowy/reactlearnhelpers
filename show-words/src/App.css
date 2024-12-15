@@ -81,3 +81,8 @@
   padding: 1rem 2rem;
   margin-bottom: .3rem;
 }
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+}

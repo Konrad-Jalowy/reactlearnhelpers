@@ -68,8 +68,10 @@ function FileUploader({onAccept}){
         {uploaderMode === 'fileNotNull' && (
             <>
             <FileInfoRFC title={wordsRef.current.title} words={wordsRef.current.words} />
+            <div className="btn-group">
             <button onClick={onResetHandler}>Reset</button>
             <button onClick={onAcceptHandler}>Accept</button>
+            </div>
             </>
         )}
         </div>
