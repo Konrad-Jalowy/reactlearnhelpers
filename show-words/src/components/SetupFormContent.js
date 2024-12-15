@@ -1,7 +1,6 @@
 function SetupFormContent({ data, handleChange, max }){
     const content = (
     <>
-    <p>Not implemented setupformcontent</p>
     <input type="checkbox" name="shuffle" checked={data.shuffle} onChange={handleChange}/>
         <label htmlFor="shuffle">Shuffle</label>
         <br/>
