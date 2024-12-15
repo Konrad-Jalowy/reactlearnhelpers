@@ -75,17 +75,20 @@
 }
 
 .info-msg{
-  font-size: 2rem;
-  background-color: bisque;
+  font-size: 2.2rem;
+  background-color: #2563eb;
   border-radius: 15px;
   padding: 1rem 2rem;
   margin-bottom: .3rem;
+  color: #bfdbfe;
+  margin-top: 0;
+  box-shadow: 1px 1px 8px 0px rgb(37 99 235);
 }
 
 .btn-group {
   display: flex;
   flex-direction: row;
-  width: 550px;
+  width: 850px;
 }
 
 .btn-group button {
