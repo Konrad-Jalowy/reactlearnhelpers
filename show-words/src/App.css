@@ -110,3 +110,7 @@
   box-shadow: 1px 1px 8px 0px rgb(126 34 206);
   
 }
+
+input[type="file"]{
+  margin-top:1rem;
+}
