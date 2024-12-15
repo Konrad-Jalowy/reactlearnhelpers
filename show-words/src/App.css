@@ -85,4 +85,9 @@
 .btn-group {
   display: flex;
   flex-direction: row;
+  width: 550px;
+}
+
+.btn-group button {
+  margin-inline: auto;
 }
