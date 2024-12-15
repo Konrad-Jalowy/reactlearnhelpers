@@ -14,6 +14,7 @@ function FormController(){
 
     return (
         <>
+        <h1 className="words-title">Words Guesser</h1>
         {formMode === "notAccepted" && <FileUploader onAccept={onAccept}/>}
         {formMode === 'accepted' && <SetupForm title={title} words={words}/> }
         </>
