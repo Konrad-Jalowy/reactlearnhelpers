@@ -34,6 +34,8 @@
   text-align: center;
   font-size: 4rem;
   margin-bottom: .5rem;
+  color: #ddd6fe;
+  -webkit-text-stroke: 2px #6b21a8;
 }
 .words-container {
   width: 1300px;
